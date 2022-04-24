@@ -16,7 +16,7 @@ namespace HomeWork22._04._22
         }
         public string GetInfo()
         {
-            return $"Userame: {Username}, Password: {Password}, IsSuper: {true}, Section: {Section}";
+            return $"Userame: {Username}, Password: {Password}, IsSuper: {IsSuperAdmin}, Section: {Section}";
         }
 
     }

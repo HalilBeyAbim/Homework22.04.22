@@ -15,7 +15,7 @@ namespace HomeWork22._04._22
             {
                 Console.WriteLine("Nickname'i daxil edin");
                 username = Console.ReadLine();
-            } while (username.Length<6);
+            } while (username.Length<=6);
             string password;
             do
             {
@@ -32,7 +32,7 @@ namespace HomeWork22._04._22
                 isSuper = true;
                 Console.WriteLine("forstanmayin:)\n");
             }
-            else
+            else if(SuperAdmin.ToLower().Trim() == "xeyir")
             {
                 isSuper = false;
                 Console.WriteLine("eybi yo:)");
@@ -40,7 +40,7 @@ namespace HomeWork22._04._22
             Console.WriteLine("Nesiz?");
             string section = Console.ReadLine();
 
-            Admin admin = new Admin(username, password, true, section);
+            Admin admin = new Admin(username, password,isSuper , section);
 
             Console.WriteLine(admin.GetInfo());
         }

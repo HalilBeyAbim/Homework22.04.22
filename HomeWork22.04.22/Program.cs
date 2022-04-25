@@ -27,12 +27,12 @@ namespace HomeWork22._04._22
             string SuperAdmin = Console.ReadLine();
             bool isSuper = false;
 
-            if (SuperAdmin.ToLower().Trim() == "beli")
+            if (SuperAdmin.ToLower() == "beli")
             {
                 isSuper = true;
                 Console.WriteLine("forstanmayin:)\n");
             }
-            else if(SuperAdmin.ToLower().Trim() == "xeyir")
+            else if(SuperAdmin.ToLower() == "xeyir")
             {
                 isSuper = false;
                 Console.WriteLine("eybi yo:)");
